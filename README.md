@@ -15,12 +15,17 @@ we introduce PhyBench, focusing on 4 types of physical knowledge, including opti
 
 
 ## Result
+
+We find that even in the simplest scenarios, current text-to-image (T2I) models are prone to errors. For example, for the prompt "A cylindrical block of wood placed in front of a mirror", DALL-E 3 and Midjourney incorrectly depict objects in a mirror. Similarly, for "An apple, a piece of wood, and an iron block in a tank filled with water", DALL-E 3, Gemini, and Midjourney all misrepresent the state of one or more objects, while DALL-E 2 omits an object entirely
+
+![image-20240618105912845](./phybench2.png)
+
+
 Thorugh extensive evaluation, we have several observations. 1) The scenes we design are simple enough that most models are able to depict them based on the prompts. 2) The machine scoring results show a high correlation with manual evaluation outcomes under our previous designs, indicating that GPT-4o can serve as an excellent humanaligned scorer on PhyBench. 3) As shown in Fig. 6, although the models can render the scenes, their performance on physical correctness is generally poor, with only optical scenarios showing relatively better results. 4) Open-source models exhibit a significant gap in understanding physical commonsense compared to proprietary models. In Fig. 9 in appendix, we present qualitative visual results and compare the performance of different models.
 
 ![image-20240618105912847](./result.png)
 
 
-![image-20240618105912845](./phybench2.png)
 
 ## Concat
 if you have any questions about this work, you can email Fanqing Meng using mengfanqing33@gmail.com
