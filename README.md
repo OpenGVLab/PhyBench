@@ -11,12 +11,16 @@ Text-to-image (T2I) models have made substantial progress in generating images f
 ## PhyBench
 we introduce PhyBench, focusing on 4 types of physical knowledge, including optics, mechanics, thermodynamics, and material properties. PhyBench encompasses a total of 700 prompts, spaning 31 physical scenarios about gravity, light scattering, ice melt, and more。
 
-
+![image-20240618105912846](./overall.png)
 
 
 ## Result
 Thorugh extensive evaluation, we have several observations. 1) The scenes we design are simple enough that most models are able to depict them based on the prompts. 2) The machine scoring results show a high correlation with manual evaluation outcomes under our previous designs, indicating that GPT-4o can serve as an excellent humanaligned scorer on PhyBench. 3) As shown in Fig. 6, although the models can render the scenes, their performance on physical correctness is generally poor, with only optical scenarios showing relatively better results. 4) Open-source models exhibit a significant gap in understanding physical commonsense compared to proprietary models. In Fig. 9 in appendix, we present qualitative visual results and compare the performance of different models.
 
+![image-20240618105912847](./result.png)
+
+
+![image-20240618105912845](./phybench2.png)
 
 ## Concat
 if you have any questions about this work, you can email Fanqing Meng using mengfanqing33@gmail.com
