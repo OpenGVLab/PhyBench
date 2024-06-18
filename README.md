@@ -1,6 +1,7 @@
 # PhyBench
 
 **PhyBench: A Physical Commonsense Benchmark for Evaluating Text-to-Image Models**
+The paper of [PhyBench](https://arxiv.org/abs/2406.11802)
 
 ![image-20240618105912844](./error.png)
 
