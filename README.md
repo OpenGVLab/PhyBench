@@ -1,5 +1,6 @@
 # PhyBench
-
+ **We releasd the PhyBench in [HuggingFace](https://huggingface.co/datasets/FanqingM/PhyBench/tree/main)**
+ 
 **PhyBench: A Physical Commonsense Benchmark for Evaluating Text-to-Image Models**
 The paper of [PhyBench](https://arxiv.org/abs/2406.11802)
 
