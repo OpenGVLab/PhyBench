@@ -6,7 +6,7 @@ The paper of [PhyBench](https://arxiv.org/abs/2406.11802)
 ![image-20240618105912844](./error.png)
 
 ## Introduction
-Text-to-image (T2I) models have made substantial progress in generating images from textual prompts. However, they frequently fail to produce images consistent with physical commonsense, a vital capability for applications in world simulation and everyday tasks. Current T2I evaluation benchmarks focus on metrics such as accuracy, bias, and safety, neglecting the evaluation of models’ internal knowledge, particularly physical commonsense. To address this issue, we introduce PhyBench, a comprehensive T2I evaluation dataset comprising 700 prompts across four primary categories: mechanics, optics, thermodynamics, and material properties, encompassing 31 distinct physical scenarios. We assess 6 prominent T2I models, including proprietary models DALLE3 and Gemini, and demonstrate that incorporating physical principles into prompts enhances the models’ ability to generate physically accurate images. Our findings reveal that: (1) even advanced models frequently err in various physical scenarios, except for optics; (2) GPT-4o, with item-specific scoring instructions, effectively evaluates the models’ understanding of physical commonsense, closely aligning with human assessments; and (3) current T2I models are primarily focused on text-toimage translation, lacking profound reasoning regarding physical commonsense. We advocate for increased attention to the inherent knowledge within T2I models, beyond their utility as mere image generation tools.
+Text-to-image (T2I) models have made substantial progress in generating images from textual prompts. However, they frequently fail to produce images consistent with physical commonsense, a vital capability for applications in world simulation and everyday tasks. Current T2I evaluation benchmarks focus on metrics such as accuracy, bias, and safety, neglecting the evaluation of models’ internal knowledge, particularly physical commonsense. To address this issue, we introduce PhyBench, a comprehensive T2I evaluation dataset comprising 700 prompts across four primary categories: mechanics, optics, thermodynamics, and material properties, encompassing 31 distinct physical scenarios. We assess 6 prominent T2I models, including proprietary models DALLE3 and Gemini, and demonstrate that incorporating physical principles into prompts enhances the models’ ability to generate physically accurate images. Our findings reveal that: (1) even advanced models frequently err in various physical scenarios, except for optics; (2) GPT-4o, with item-specific scoring instructions, effectively evaluates the models’ understanding of physical commonsense, closely aligning with human assessments; and (3) current T2I models are primarily focused on text-toimage translation, lacking profound reasoning regarding physical commonsense. We advocate for increased attention to the inherent knowledge within T2I models, beyond their utility as mere image generation tools. We releasd the PhyBench in (HuggingFace)[https://huggingface.co/datasets/FanqingM/PhyBench/tree/main]
 
 ![image-20240618105912845](./phybench.png)
 
@@ -33,9 +33,15 @@ Thorugh extensive evaluation, we have several observations. 1) The scenes we des
 ## Concat
 if you have any questions about this work, you can email Fanqing Meng using mengfanqing33@gmail.com
 
-## To Do List
+## Citation
+Please consider citing our paper or giving a star if you find this project helpful for your research:
+```
+@article{meng2024phybench,
+  title={PhyBench: A Physical Commonsense Benchmark for Evaluating Text-to-Image Models},
+  author={Meng, Fanqing and Shao, Wenqi and Luo, Lixin and Wang, Yahong and Chen, Yiran and Lu, Quanfeng and Yang, Yue and Yang, Tianshuo and Zhang, Kaipeng and Qiao, Yu and others},
+  journal={arXiv preprint arXiv:2406.11802},
+  year={2024}
+}
+```
 
-- [x] Create the git repository.
 
-
-- [] Open source the phybench (coming sonn!)
